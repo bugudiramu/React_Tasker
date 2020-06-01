@@ -27,7 +27,8 @@ body {
 .priority{
   margin-top: 1rem;
 
-  background-color: crimson;
+  background-color: crimson; 
+  /* or crimson hex code #DC143C */
   text-align: center;
   height: 30px;
   width: 30px;

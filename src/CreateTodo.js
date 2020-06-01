@@ -236,7 +236,7 @@ class CreateTodo extends Component {
 
         {this.state.todos.length <= 0 ? (
           <h3 className="text-center" style={{ color: "crimson" }}>
-            No Items Found
+            No Todos Found
           </h3>
         ) : (
           this.state.todos.map((todo) => (
@@ -265,7 +265,7 @@ class CreateTodo extends Component {
                 </p>
               </div>
 
-              <p className="priority">{todo.priority[0]}</p>
+              <p style={{backgroundColor:todo.priority === "High" ? "green":todo.priority==="Medium"?"blue":"#DC143C"}} className="priority">{todo.priority[0]}</p>
               <button
                 onClick={this.delTodo.bind(this, todo.id)}
                 className="btn btn-danger"
